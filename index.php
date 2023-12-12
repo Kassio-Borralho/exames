@@ -26,7 +26,7 @@
     </form>
 
     <hr>
-    <a href="listagem.php">Visualizar agendamentos</a>
+    <a href="Controller/ListagemController.php">Visualizar agendamentos</a>
 </div>
 
 <?php include 'layout/footer.php' ?>
