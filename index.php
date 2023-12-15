@@ -1,6 +1,7 @@
 <?php include 'layout/header.php' ?>
 
-<div style="width: 500px; padding: 20px">
+
+<div style="width: 400px; padding: 20px">
 
 
     <?php if (isset($_GET['sucesso'])) : ?>

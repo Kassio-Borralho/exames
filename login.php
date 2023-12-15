@@ -4,19 +4,20 @@
 
 <div style="width: 500px; padding: 20px">
 <h1>LOGIN</h1>
-<form action="controller/CadatroController.php" method="POST">
+<?php if (isset($_GET['erro'])) : ?>
+        <div class="alert alert-danger" role="alert">
+            Email ou Senha nao encontrado!
+        </div>
+    <?php endif; ?>
+<form action="controller/auth/AuthController.php" method="POST">
         <div class="form-group">
             <small class="form-text text-muted">Email</small>
             <input type="text" class="form-control" name="email">
         </div>
         <div class="form-group">
             <small class="form-text text-muted">Senha</small>
-            <input type="text" class="form-control" name="email">
+            <input type="password" class="form-control" name="senha">
         </div>
-        <div class="form-group">
-            <input type="text" class="form-control" name="descricao" placeholder="descricao da consulta">
-        </div>
-
         <button type="submit" class="btn btn-primary">Entrar</button>
     </form>
 </div>
