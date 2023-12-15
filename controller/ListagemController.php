@@ -1,5 +1,6 @@
 
 <?php
+include '../routes/middleware.php';
 include '../layout/header.php';
 include '../database/db.php';
 

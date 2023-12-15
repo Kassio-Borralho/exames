@@ -1,5 +1,7 @@
-<?php include 'layout/header.php' ?>
-
+<?php 
+include 'routes/middleware.php';
+include 'layout/header.php';
+?>
 
 <div style="width: 400px; padding: 20px">
 

@@ -1,4 +1,5 @@
     <?php
+        session_start();
     include '../../database/db.php';
 
 
@@ -14,12 +15,12 @@
     $transacao->fetchAll();
 
     if($transacao->rowCount()>0){
-
-        header("location: ../../index.php");
+        $_SESSION['autenticado'] = true;
+        header("Location: ../../index.php");
 
     }else{
-
-        header("location: ../../login.php?erro");
+        $_SESSION['autenticado'] = false;
+        header("Location: ../../login.php?erro");
     }
     
 
